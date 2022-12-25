@@ -32,9 +32,6 @@ app.use("/api/category", categoryRoute);
 app.use(notFound);
 app.use(errorHandler);
 
-if(process.env.NODE_ENV="production"){
-    app.use(express.static("client/build"))
-}
 
 //server
 const PORT = process.env.PORT || 5000;
